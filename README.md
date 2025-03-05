@@ -9,7 +9,7 @@
 
 🔹 **Objective:** Celebrate and promote the traditions, lifestyle, and history of Dessie.  
 🔹 **Key Features:** Cultural stories, traditional music, local food, historical landmarks, and more.  
-🔹 **Technologies Used:** HTML, CSS, JavaScript, PHP (or other relevant technologies).
+🔹 **Technologies Used:** HTML, CSS, JavaScript (or other relevant technologies).
 
 ---
 
