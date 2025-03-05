@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <h1><a href="#"><span class="logo-dicor"><u>D</u></span>essie</a></h1>
+        </div>
+          <nav id='menu'>
+              <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+              <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a class='dropdown-arrow' href='hotels.html'>Hotels</a>
+                  <ul class='sub-menus'>
+                    <li><a href='hotels.html#golden'>Golden Gate Hotel</a></li>
+                    <li><a href='hotels.html#lucy'>Lucy Hotel</a></li>
+                    <li><a href='hotels.html#time'>Time Hotel</a></li>
+      
+                  </ul>
+                </li>
+                <li><a href='contact.html'>Contact</a></li>
+                <li><a class='dropdown-arrow' href='places.html'>Places</a>
+                  <ul class='sub-menus'>
+                    <li><a href='places.html#ayteyef'>Ayteyef Adarash</a></li>
+                    <li><a href='places.html#jemangus'>Jema Ngus</a></li>
+                    <li><a href='places.html#borena'>Borena Saint National Park</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav> 
+      </header> <br><br><br><br><br>
+<section>
+     <h4><span><u>Sign</u></span>up</h4>
+     <form action="" class="form-region">
+             <label for="name">your name:</label><br>
+             <input type="text" placeholder="Enter Your Full Name" class="input" required><br><br>
+             <label for="email">your email:</label><br>
+             <input type="email" placeholder="Enter Your Email" class="input" required><br><br>
+             <label for="phone number">your number:</label><br>
+             <input type="tel" placeholder="Enter Your Phone number" class="input" required><br><br>
+             <label for="place">Select place:</label><br>
+             <select>
+                <option value="Ayteyef Adarash">Select a place you want go</option>
+                <option value="Ayteyef Adarash">Ayteyef Adarash</option>
+                <option value="Jema Ngus mosque">Jema Ngus mosque</option>
+                <option value="Borena Sinet National Park">Borena Sinet National Park</option>
+                <option value="Borumeda">Borumeda</option>
+            
+             </select><br><br>
+             <label for="gender">Select gender:</label><br>
+             <input type="radio" name="gender" class="radio">
+             <label for="male" >Male</label>
+             <input type="radio" name="gender" class="radio">
+             <label for="female">Female</label>
+             <br>
+             <input type="submit" value="Submit" class="button">
+     </form>
+
+  </section> 
+</body>
+</html>

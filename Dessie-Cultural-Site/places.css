@@ -1,0 +1,693 @@
+
+body {
+	margin: 0;
+	padding: 0;
+
+}
+header {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    background: linear-gradient(45deg, rgba(118, 105, 105, 0.638), transparent);
+    text-transform: uppercase;
+    width: 100%;
+    height: 13vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo {
+    width: 40%;
+    display: flex;
+	height: 12vh;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 a{
+    text-decoration: none;
+    color: #BE0EAA;
+}
+.logo-dicor {
+    font-size: 5rem;
+    color: white;
+}
+#menu {
+	color: #FFF;
+	height: 10vh;
+	width: 50%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #BE0EAA;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #0099CC;
+    scale: 1.1;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+    font-weight: 900;
+	line-height: 45px;
+    margin-left: 70%;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 230%;
+    background: linear-gradient(rgb(213, 125, 125), rgb(137, 72, 137));
+    text-align: left;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+
+a:hover {
+   color: green;
+   scale: 1.5;
+}
+.first-section {
+    height: 50vh;
+    background-image: url("images/green-leaf.webp");
+    background-size: cover;
+    color: white;
+    padding: 12rem 10%;
+    text-align: center;
+
+}
+.advertise-logo h3 {
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+}
+.review-span {
+    color: purple;
+    animation-name: left;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+@keyframes right {
+
+    0% {
+        margin-left: 5rem;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+    
+}
+@keyframes left {
+
+    0% {
+        margin-left: 20rem;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+    
+}   
+.container {
+    width: 180vh;
+    height: 65vh;
+    margin-left: -5rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+
+}
+.one {
+    width: 90%;
+    height: 60vh;
+    border: 20px solid white;
+    background-color: white;
+    box-shadow: 0 2rem 2rem #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pic-1{
+    width: 100%;
+    height: 30vh;
+    background-image: url("images/ayteyef-2.jpg");
+    background-size: cover;
+
+}
+.pic-1:hover {
+    scale: 1.1;
+    background-image: url("images/ayiteyef-img.webp");
+}
+.text-1{
+    width: 100%;
+    height: 30vh;
+}
+h3 {
+    font-size: 2rem;
+    color: purple;
+}
+p {
+    color: black;
+}
+.two {
+    width: 90%;
+    height: 60vh;
+    border: 20px solid white;
+    background-color: white;
+    box-shadow: 0 2rem 2rem #666;
+}
+.pic-2{
+    width: 100%;
+    height: 30vh;
+    background-image: url("images/traditional-dressing-1.jpg");
+    background-size: cover;
+
+}
+.pic-2:hover {
+    scale: 1.1;
+    background-image: url("images/traditional-dressing-2.jpg");
+}
+.text-2 {
+    width: 100%;
+    height: 30vh;
+}
+.three {
+    width: 90%;
+    height: 60vh;
+    border: 20px solid white;
+    background-color: white;
+    box-shadow: 0 2rem 2rem #666;
+}
+.pic-3 {
+    width: 100%;
+    height: 30vh;
+    background-image: url("images/Borena-Sayint_National_Park.jpg");
+    background-size: cover;
+
+}
+.pic-3:hover {
+    scale: 1.1;
+    background-image: url("images/nationa-park-2.jpg");
+}
+.text-3 {
+    width: 100%;
+    height: 30vh;
+}
+.four {
+    width: 90%;
+    height: 60vh;
+    border: 20px solid white;
+    background-color: white;
+    box-shadow: 0 2rem 2rem #666;
+}
+.pic-4 {
+    width: 100%;
+    height: 30vh;
+    background-image: url("images/jemangus-hadra.jpg");
+    background-size: cover;
+
+}
+.pic-4:hover {
+    scale: 1.1;
+    background-image: url("images/jemangus-hadra.jpg");
+}
+.text-4 {
+    width: 100%;
+    height: 30vh;
+}
+
+footer {
+    color: #333;
+    width: 100vw;
+    height: 20vh;
+    margin-left: -10rem;
+    text-align: left;
+    padding-bottom: 2rem;
+    background: linear-gradient(45deg, rgb(111, 223, 205), transparent);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-area {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h4 {
+    text-align: left;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+@media screen and (max-width: 992px){
+    #menu {
+        position:relative;
+        font-size: 3rem;
+        width: 40%;}
+	#menu ul {
+        background:#111;
+        position:absolute;
+        top:100%;right:0;
+        left:0;
+        z-index:3;
+        height:auto;
+        display:none}
+	#menu ul.sub-menus {
+        width:100%;
+        position:static;
+    }
+	#menu ul.sub-menus a {
+        padding-left:30px;
+    }
+	#menu li {
+        display:block;
+        float:none;
+        width:auto;
+    }
+	#menu input, #menu label {
+        position:absolute;
+        top:0;left:0;
+        display:block
+    }
+	#menu input {
+        z-index:4
+    }
+	#menu input:checked + label {
+        color:white
+    }
+	#menu input:checked + label:before {
+        content:"\00d7"
+    }
+	#menu input:checked ~ ul {
+        display:block
+    }
+    .logo {
+        width: 20%;
+    }
+	u {
+        font-size: 5rem;
+    }
+	.logo-dicor {
+        font-size: 5rem;
+    }
+	#responsive-menu {
+        color: black;
+    }
+    #menu a{
+        color: white;
+        width: 120%;
+        text-align: center;
+        background: linear-gradient(45deg,rgb(213, 125, 125), rgb(137, 72, 137));
+    }
+    #menu ul.sub-menus {
+        margin-left: 0.5rem;
+        text-align: left;
+        width: 127%;
+        background: linear-gradient(45deg,rgb(213, 125, 125), rgb(137, 72, 137));
+    }
+    .first-section {
+        height: 30vh;
+        width: 100%;
+    }
+    .advertise-logo h3 {
+        margin-top: 10rem;
+        margin-bottom: -10rem;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    .adverisement-header-1 {
+        height: 7vh;
+        margin: auto;
+        font-size: 3rem;
+        margin-top: -3rem;
+        margin-bottom: 0rem;
+        text-align: center;
+        background-size: cover;
+    }
+    .adverisement-header-1 h5{
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    .container {
+        width: 119vw;
+        height: 150vh;
+        margin-left: -5rem;
+        margin-top: 19rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0px;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    .one {
+        width: 80%;
+        height: 60vh;
+        margin: auto;
+        border: 20px solid white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pic-1{
+        width: 100%;
+        height: 30vh;
+        background-image: url("images/ayteyef-2.jpg");
+        background-size: cover;
+    
+    }
+
+    .text-1{
+        width: 100%;
+        height: 30vh;
+    }
+    h3 {
+        font-size: 2.5rem;
+        color: purple;
+    }
+    p {
+        color: black;
+        font-size: 1.3rem;
+    }
+    .two {
+        width: 80%;
+        height: 60vh;
+        margin: auto;
+        border-radius: 10px;
+        border: 20px solid white;
+    }
+    .pic-2{
+        width: 100%;
+        height: 30vh;
+        background-image: url("images/traditional-dressing-1.jpg");
+        background-size: cover;
+    
+    }
+    .text-2 {
+        width: 100%;
+        height: 30vh;
+    }
+    .three {
+        width: 80%;
+        height: 60vh;
+        margin: auto;
+        border-radius: 10px;
+        border: 20px solid white;
+    }
+    .pic-3 {
+        width: 100%;
+        height: 30vh;
+        background-image: url("images/Borena-Sayint_National_Park.jpg");
+        background-size: cover;
+    
+    }
+    .text-3 {
+        width: 100%;
+        height: 30vh;
+    }
+    .four {
+        width: 80%;
+        height: 60vh;
+        margin: auto;
+        border-radius: 10px;
+        border: 20px solid white;
+    }
+    .pic-4 {
+        width: 100%;
+        height: 30vh;
+        background-image: url("images/jemangus-hadra.jpg");
+        background-size: cover;
+    
+    }
+    .text-4 {
+        width: 100%;
+        height: 30vh;
+    }
+    footer {
+        color: #333;
+        width: 120vw;
+        height: 20vh;
+        margin-left: -4.5rem;
+        text-align: left;
+        padding-bottom: 2rem;
+        background: linear-gradient(45deg, rgb(111, 223, 205), transparent);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer-area {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    h4 {
+        text-align: left;
+        font-size: 1.3rem;
+        padding-top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+    #menu ul {background:black;
+        position:absolute;
+        top:115%;
+        right:0;
+        left:0;
+        z-index:3;
+        height:auto;
+        display:none;
+        width: 220%;
+        margin-right: 2px;
+        text-align: center;
+    }
+        #menu a{
+            color: white;
+            width: 110%;
+            text-align: center;
+            background: linear-gradient(45deg,rgb(213, 125, 125), rgb(137, 72, 137));
+        }
+        #menu ul.sub-menus {
+            margin-left: 1rem;
+            text-align: left;
+            width: 117%;
+            background-color: #444444;
+        }
+        .first-section{
+            width: 100%;
+            height: 35vh;
+           
+        
+        }
+        .advertise-logo h3 {
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            width: 100%;
+            height: 265vh;
+            margin: 20rem auto 5rem auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 0px;
+            justify-content: space-evenly;
+            align-items: center;
+        
+        }
+        .one {
+            width: 100%;
+            height: 60vh;
+            margin: auto;
+            border: none;
+            border-bottom: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pic-1{
+            width: 90%;
+            height: 30vh;
+            margin-top: 1rem;
+            background-image: url("images/ayteyef-2.jpg");
+            background-size: cover;
+        
+        }
+        .two {
+            width: 100%;
+            height: 60vh;
+            margin: auto;
+            border: none;
+            border-bottom: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pic-2{
+            width: 90%;
+            height: 30vh;
+            margin-top: 1rem;
+            background-image: url("images/traditional-dressing-1.jpg");
+            background-size: cover;
+        
+        }
+
+        .text-2 {
+            width: 100%;
+            height: 30vh;
+        }
+         h3{
+            margin: 0;
+        }
+        .three {
+            width: 100%;
+            height: 60vh;
+            border: none;
+            border-bottom: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+        .pic-3 {
+            width: 90%;
+            height: 30vh;
+            margin-top: 1rem;
+            background-image: url("images/Borena-Sayint_National_Park.jpg");
+            background-size: cover;
+        
+        }
+
+        .text-3 {
+            width: 100%;
+            height: 30vh;
+        }
+        .four {
+            width: 100%;
+            height: 60vh;
+            border: none;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pic-4 {
+            width: 90%;
+            height: 30vh;
+            margin-top: 1rem;
+            background-image: url("images/jemangus-hadra.jpg");
+            background-size: cover;
+        
+        }
+
+        footer {
+            color: #333;
+            height: 40vh;
+            width: 130%;
+            background: linear-gradient(45deg, rgb(111, 223, 205), transparent);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+           
+        }
+        .footer-area {
+            flex-direction: column;
+            width: 65%;
+            height: 35vh;
+            margin-top: 7rem;
+            margin-left: 13rem;
+            margin-bottom: 5rem;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: left;
+            align-items: start;
+        
+        }
+        .footer-link {
+            text-align: left;
+            font-size: 1.2rem;
+        
+        }
+        h4 {
+            margin: -30px 8px 0 8px;
+            font-size: 1.5rem;
+        
+        }
+
+
+    
+}
